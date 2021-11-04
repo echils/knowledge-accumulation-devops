@@ -7,23 +7,23 @@
 </p>
 
 
-- [CentOS 7安装Docker](#jump1)
-- [CentOS 7卸载Docker](#jump2)
+- **[CentOS 7安装Docker](#jump1)**
+- **[CentOS 7卸载Docker](#jump2)**
 
 
 ***
 
 <span id="jump1"></span>
 ## CentOS 7安装Docker
-1、关闭防火墙
+**1、关闭防火墙**
 
 `systemctl stop firewalld && systemctl disable firewalld`
 
-2、关闭SELINUX
+**2、关闭SELINUX**
 
 `sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config`
 
-3、安装工具
+**3、安装工具**
 
 `yum install -y yum-utils device-mapper-persistent-data lvm2`
 
@@ -33,7 +33,7 @@
   </a>
 </p>
 
-4、安装Docker源
+**4、安装Docker源**
 
 `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
 
@@ -43,7 +43,7 @@
   </a>
 </p>
 
-5、查找并选择Docker安装版本
+**5、查找并选择Docker安装版本**
 
 `yum list docker-ce --showduplicates | sort -r`
 
@@ -53,7 +53,7 @@
   </a>
 </p>
 
-5、安装Docker(版本已19.03.9-3.el7为例)
+**6、安装Docker(版本已19.03.9-3.el7为例)**
 
 `yum install -y docker-ce-19.03.9-3.el7 docker-ce-cli-19.03.9-3.el7 containerd.io`
 
@@ -63,7 +63,7 @@
   </a>
 </p>
 
-6、配置Docker自启动
+**7、配置Docker自启动**
 
 `systemctl enable docker && systemctl start docker`
 
@@ -73,7 +73,7 @@
   </a>
 </p>
 
-7、验证安装是否成功
+**8、验证安装是否成功**
 
 `systemctl status docker.service`
 
@@ -83,7 +83,7 @@
   </a>
 </p>
 
-8、验证Docker版本
+**9、验证Docker版本**
 
 `docker version`
 
@@ -93,7 +93,7 @@
   </a>
 </p>
 
-9、配置镜像加速和私服
+**10、配置镜像加速和私服**
 
 `cat <<EOF > /etc/docker/daemon.json
  {
@@ -111,7 +111,7 @@
   </a>
 </p>
 
-10、重启Docker服务并验证Docker
+**11、重启Docker服务并验证Docker**
 
 `systemctl restart docker.service && systemctl status docker.service`
 
