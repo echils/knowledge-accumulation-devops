@@ -1,4 +1,4 @@
-# 记录日常学习和工作中有关Docker、Kubernetes、Rancher的知识
+# 记录日常学习和工作中有关Linux、Docker、Kubernetes、Rancher的知识
 
 <p align="center">
   <a>
@@ -8,13 +8,13 @@
 
 ###
 
-- LINUX知识积累 [传送门](./linux/README.md)
+- Linux知识积累 [传送门](./linux/README.md)
 
 
-- DOCKER知识积累 [传送门](./docker/README.md)
+- Docker知识积累 [传送门](./docker/README.md)
 
 
-- KUBERNETES知识积累 [传送门](./kubernetes/README.md)
+- Kubernetes知识积累 [传送门](./kubernetes/README.md)
 
 
-- RANCHER知识积累 [传送门](./rancher/README.md)
+- Rancher知识积累 [传送门](./rancher/README.md)
