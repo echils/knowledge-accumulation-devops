@@ -6,6 +6,14 @@
   </a>
 </p>
 
+
+- [CentOS 7安装Docker](#jump1)
+- [CentOS 7卸载Docker](#jump2)
+
+
+***
+
+<span id="jump1"></span>
 ## CentOS 7安装Docker
 1、关闭防火墙
 
@@ -112,3 +120,9 @@
    <img alt="Framework" src="./source/9.png" width="1000">
   </a>
 </p>
+
+
+***
+
+<span id="jump2"></span>
+## CentOS 7卸载Docker
