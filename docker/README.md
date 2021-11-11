@@ -158,6 +158,7 @@
 **3、删除docker镜像、容器路径**
 
 `rm -rf /var/lib/docker && rm -rf /data/docker`
+
 注意: data/docker是上面安装时自定义的路径，没有配置的话只需要删除默认路径/var/lib/docker
 
 **4、删除docker临时文件系统**
