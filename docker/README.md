@@ -126,3 +126,40 @@
 
 <span id="jump2"></span>
 ## CentOS 7卸载Docker
+**1、搜索并删除已安装的docker安装包**
+
+`yum list installed|grep docker`
+
+<p align="center">
+  <a>
+   <img alt="Framework" src="./source/10.png" width="1000">
+  </a>
+</p>
+
+**2、删除docker组件**
+
+`yum remove -y docker \
+ docker-client \
+ docker-client-latest \
+ docker-common \
+ docker-latest \
+ docker-latest-logrotate \
+ docker-logrotate \
+ docker-selinux \
+ docker-engine-selinux \
+ docker-engine
+`
+<p align="center">
+  <a>
+   <img alt="Framework" src="./source/11.png" width="1000">
+  </a>
+</p>
+
+**3、删除docker镜像、容器路径**
+
+`rm -rf /var/lib/docker && rm -rf /data/docker`
+注意: data/docker是上面安装时自定义的路径，没有配置的话只需要删除默认路径/var/lib/docker
+
+**4、删除docker临时文件系统**
+
+`rm -rf /var/run/docker`
