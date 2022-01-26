@@ -5,15 +5,3 @@
    <img alt="Framework" src="../ECHILS.PNG">
   </a>
 </p>
-
-
-# LINUX知识积累
-
-
-# DOCKER知识积累
-
-
-# KUBERNETES知识积累
-
-
-# RANCHER知识积累
